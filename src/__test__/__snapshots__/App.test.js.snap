@@ -1,0 +1,572 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders react app 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <App>
+    <div
+      className="app"
+    >
+      <Header>
+        <header
+          className="app-header"
+        >
+          <Logo
+            logoImg="logo.png"
+          >
+            <a
+              className="undefined app-logo-link"
+              href="/"
+            >
+              <img
+                alt="app logo"
+                className="app-logo-image"
+                src="logo.png"
+              />
+            </a>
+          </Logo>
+        </header>
+      </Header>
+      <main>
+        <h1>
+          Expense App
+        </h1>
+        <Connect(ChartComponent)>
+          <ChartComponent
+            data={
+              Array [
+                Object {
+                  "expenditure": "House rent",
+                  "id": 1,
+                  "incomeSource": "Job",
+                  "proportion": 30,
+                },
+                Object {
+                  "expenditure": "Cab rent",
+                  "id": 2,
+                  "incomeSource": "Job",
+                  "proportion": 5,
+                },
+                Object {
+                  "expenditure": "Phone EMI",
+                  "id": 3,
+                  "incomeSource": "Job",
+                  "proportion": 20,
+                },
+                Object {
+                  "expenditure": "Party",
+                  "id": 4,
+                  "incomeSource": "Freelancing",
+                  "proportion": 10,
+                },
+                Object {
+                  "expenditure": "House rent",
+                  "id": 5,
+                  "incomeSource": "Freelancing",
+                  "proportion": 20,
+                },
+              ]
+            }
+            dispatch={[Function]}
+          >
+            <div
+              className="app-chart"
+            >
+              <Chart
+                chartActions={null}
+                chartEvents={null}
+                chartType="Sankey"
+                chartWrapperParams={Object {}}
+                className=""
+                columns={null}
+                controls={null}
+                data={
+                  Array [
+                    Array [
+                      "From",
+                      "To",
+                      "Weight",
+                    ],
+                    Array [
+                      "Job",
+                      "House rent",
+                      30,
+                    ],
+                    Array [
+                      "Job",
+                      "Cab rent",
+                      5,
+                    ],
+                    Array [
+                      "Job",
+                      "Phone EMI",
+                      20,
+                    ],
+                    Array [
+                      "Freelancing",
+                      "Party",
+                      10,
+                    ],
+                    Array [
+                      "Freelancing",
+                      "House rent",
+                      20,
+                    ],
+                  ]
+                }
+                diffdata={null}
+                formatters={null}
+                getChartEditor={null}
+                getChartWrapper={[Function]}
+                graphID={null}
+                graph_id={null}
+                height="300px"
+                legendToggle={false}
+                legend_toggle={false}
+                options={Object {}}
+                render={null}
+                rootProps={Object {}}
+                rows={null}
+                spreadSheetQueryParameters={
+                  Object {
+                    "gid": 1,
+                    "headers": 1,
+                  }
+                }
+                spreadSheetUrl={null}
+                style={Object {}}
+                toolbarID={null}
+                toolbarItems={null}
+                width="70%"
+              >
+                <ContextProvider
+                  value={
+                    Object {
+                      "chartActions": null,
+                      "chartEvents": null,
+                      "chartType": "Sankey",
+                      "chartWrapperParams": Object {},
+                      "className": "",
+                      "columns": null,
+                      "controls": null,
+                      "data": Array [
+                        Array [
+                          "From",
+                          "To",
+                          "Weight",
+                        ],
+                        Array [
+                          "Job",
+                          "House rent",
+                          30,
+                        ],
+                        Array [
+                          "Job",
+                          "Cab rent",
+                          5,
+                        ],
+                        Array [
+                          "Job",
+                          "Phone EMI",
+                          20,
+                        ],
+                        Array [
+                          "Freelancing",
+                          "Party",
+                          10,
+                        ],
+                        Array [
+                          "Freelancing",
+                          "House rent",
+                          20,
+                        ],
+                      ],
+                      "diffdata": null,
+                      "formatters": null,
+                      "getChartEditor": null,
+                      "getChartWrapper": [Function],
+                      "graphID": null,
+                      "graph_id": null,
+                      "height": "300px",
+                      "legendToggle": false,
+                      "legend_toggle": false,
+                      "options": Object {},
+                      "render": null,
+                      "rootProps": Object {},
+                      "rows": null,
+                      "spreadSheetQueryParameters": Object {
+                        "gid": 1,
+                        "headers": 1,
+                      },
+                      "spreadSheetUrl": null,
+                      "style": Object {},
+                      "toolbarID": null,
+                      "toolbarItems": null,
+                      "width": "70%",
+                    }
+                  }
+                >
+                  <GoogleChartLoader
+                    onError={[Function]}
+                    onLoad={[Function]}
+                  >
+                    <Script
+                      attributes={Object {}}
+                      onCreate={[Function]}
+                      onError={[Function]}
+                      onLoad={[Function]}
+                      url="https://www.gstatic.com/charts/loader.js"
+                    />
+                  </GoogleChartLoader>
+                </ContextProvider>
+              </Chart>
+            </div>
+          </ChartComponent>
+        </Connect(ChartComponent)>
+        <div
+          className="app-table-wrapper"
+        >
+          <Connect(Table)>
+            <Table
+              addAction={[Function]}
+              data={
+                Array [
+                  Object {
+                    "expenditure": "House rent",
+                    "id": 1,
+                    "incomeSource": "Job",
+                    "proportion": 30,
+                  },
+                  Object {
+                    "expenditure": "Cab rent",
+                    "id": 2,
+                    "incomeSource": "Job",
+                    "proportion": 5,
+                  },
+                  Object {
+                    "expenditure": "Phone EMI",
+                    "id": 3,
+                    "incomeSource": "Job",
+                    "proportion": 20,
+                  },
+                  Object {
+                    "expenditure": "Party",
+                    "id": 4,
+                    "incomeSource": "Freelancing",
+                    "proportion": 10,
+                  },
+                  Object {
+                    "expenditure": "House rent",
+                    "id": 5,
+                    "incomeSource": "Freelancing",
+                    "proportion": 20,
+                  },
+                ]
+              }
+              deleteAction={[Function]}
+              editAction={[Function]}
+            >
+              <table
+                className="table table-bordered"
+              >
+                <TableHeader>
+                  <thead>
+                    <tr>
+                      <th
+                        key="0"
+                      >
+                        Income
+                      </th>
+                      <th
+                        key="1"
+                      >
+                        Expenditure
+                      </th>
+                      <th
+                        key="2"
+                      >
+                        Proportion
+                      </th>
+                      <th
+                        key="3"
+                      >
+                        Delete
+                      </th>
+                    </tr>
+                  </thead>
+                </TableHeader>
+                <tbody>
+                  <tr
+                    key="1"
+                  >
+                    <td>
+                      <input
+                        className="form-control"
+                        id="1_incomeSource"
+                        onChange={[Function]}
+                        type="text"
+                        value="Job"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        className="form-control"
+                        id="1_expenditure"
+                        onChange={[Function]}
+                        type="text"
+                        value="House rent"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        className="form-control"
+                        id="1_proportion"
+                        onChange={[Function]}
+                        placeholder=""
+                        type="number"
+                        value={30}
+                      />
+                    </td>
+                    <td>
+                      <Button
+                        buttonText="Delete"
+                        clickHandler={[Function]}
+                      >
+                        <button
+                          className="btn undefined"
+                          onClick={[Function]}
+                        >
+                          Delete
+                        </button>
+                      </Button>
+                    </td>
+                  </tr>
+                  <tr
+                    key="2"
+                  >
+                    <td>
+                      <input
+                        className="form-control"
+                        id="2_incomeSource"
+                        onChange={[Function]}
+                        type="text"
+                        value="Job"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        className="form-control"
+                        id="2_expenditure"
+                        onChange={[Function]}
+                        type="text"
+                        value="Cab rent"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        className="form-control"
+                        id="2_proportion"
+                        onChange={[Function]}
+                        placeholder=""
+                        type="number"
+                        value={5}
+                      />
+                    </td>
+                    <td>
+                      <Button
+                        buttonText="Delete"
+                        clickHandler={[Function]}
+                      >
+                        <button
+                          className="btn undefined"
+                          onClick={[Function]}
+                        >
+                          Delete
+                        </button>
+                      </Button>
+                    </td>
+                  </tr>
+                  <tr
+                    key="3"
+                  >
+                    <td>
+                      <input
+                        className="form-control"
+                        id="3_incomeSource"
+                        onChange={[Function]}
+                        type="text"
+                        value="Job"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        className="form-control"
+                        id="3_expenditure"
+                        onChange={[Function]}
+                        type="text"
+                        value="Phone EMI"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        className="form-control"
+                        id="3_proportion"
+                        onChange={[Function]}
+                        placeholder=""
+                        type="number"
+                        value={20}
+                      />
+                    </td>
+                    <td>
+                      <Button
+                        buttonText="Delete"
+                        clickHandler={[Function]}
+                      >
+                        <button
+                          className="btn undefined"
+                          onClick={[Function]}
+                        >
+                          Delete
+                        </button>
+                      </Button>
+                    </td>
+                  </tr>
+                  <tr
+                    key="4"
+                  >
+                    <td>
+                      <input
+                        className="form-control"
+                        id="4_incomeSource"
+                        onChange={[Function]}
+                        type="text"
+                        value="Freelancing"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        className="form-control"
+                        id="4_expenditure"
+                        onChange={[Function]}
+                        type="text"
+                        value="Party"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        className="form-control"
+                        id="4_proportion"
+                        onChange={[Function]}
+                        placeholder=""
+                        type="number"
+                        value={10}
+                      />
+                    </td>
+                    <td>
+                      <Button
+                        buttonText="Delete"
+                        clickHandler={[Function]}
+                      >
+                        <button
+                          className="btn undefined"
+                          onClick={[Function]}
+                        >
+                          Delete
+                        </button>
+                      </Button>
+                    </td>
+                  </tr>
+                  <tr
+                    key="5"
+                  >
+                    <td>
+                      <input
+                        className="form-control"
+                        id="5_incomeSource"
+                        onChange={[Function]}
+                        type="text"
+                        value="Freelancing"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        className="form-control"
+                        id="5_expenditure"
+                        onChange={[Function]}
+                        type="text"
+                        value="House rent"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        className="form-control"
+                        id="5_proportion"
+                        onChange={[Function]}
+                        placeholder=""
+                        type="number"
+                        value={20}
+                      />
+                    </td>
+                    <td>
+                      <Button
+                        buttonText="Delete"
+                        clickHandler={[Function]}
+                      >
+                        <button
+                          className="btn undefined"
+                          onClick={[Function]}
+                        >
+                          Delete
+                        </button>
+                      </Button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      colSpan="4"
+                    >
+                      <Button
+                        buttonText="Add new row"
+                        clickHandler={[Function]}
+                      >
+                        <button
+                          className="btn undefined"
+                          onClick={[Function]}
+                        >
+                          Add new row
+                        </button>
+                      </Button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </Table>
+          </Connect(Table)>
+          <p
+            className="app-note"
+          >
+            ** Click on table cell to modify values
+          </p>
+        </div>
+      </main>
+      <Footer>
+        <footer
+          className="app-footer"
+        >
+          Copyright Plavika Singh (2020)
+        </footer>
+      </Footer>
+    </div>
+  </App>
+</Provider>
+`;

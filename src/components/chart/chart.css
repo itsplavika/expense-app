@@ -1,0 +1,9 @@
+.app-chart {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.app-chart div {
+    margin-left: 4%;
+}
