@@ -7,7 +7,7 @@ import './table.css';
 
 
 const Table = (props) => {
-    const { data, addAction, editAction, deleteAction } = props;
+    const { data, jsonData, addAction, editAction, deleteAction } = props;
 
     return (
         <table className="table table-bordered">
@@ -41,7 +41,7 @@ const Table = (props) => {
                             </td>
                             <td>
                                  <Button
-                                    buttonText="Delete"
+                                    buttonText={jsonData.deleteBtnText}
                                     clickHandler={(e) => deleteAction(row)}
                                 />
                             </td>
@@ -51,7 +51,7 @@ const Table = (props) => {
                 <tr>
                     <td colSpan="4">
                         <Button
-                            buttonText="Add new row"
+                            buttonText={jsonData.addBtnText}
                             clickHandler={addAction}
                         />
                     </td>
@@ -61,7 +61,8 @@ const Table = (props) => {
     );
 }
 const mapStateToProps = (state) => ({
-    data: state
+    data: state.appReducer,
+    jsonData: state.langReducer.jsonData
 })
 
 const mapDispatchToProps = (dispatch) => ({

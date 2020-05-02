@@ -1,16 +1,24 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { store } from './store';
+import { loadLanguage } from './actions';
+
+import i18 from './assets/i18';
+
+const {jsonData, lang} = i18();
+store.dispatch(loadLanguage({jsonData, lang}));
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-        <App />
-    </Provider>
+      <Provider store={store}>
+        <Suspense fallback={""}>
+          <App />
+        </Suspense>
+      </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -7,7 +7,7 @@ const initialState = [
     { incomeSource: 'Freelancing', expenditure: 'House rent', proportion: 20 , id:5},
 ];
 
-export const AppReducer = function(state = initialState, action) {
+export const appReducer = function(state = initialState, action) {
 
     switch (action.type) {
         case 'add' : return addDataFn(state);

@@ -1,0 +1,10 @@
+.lang-selector{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+}
+
+.lang-selector input {
+    margin: 0 10px 0 20px;
+}

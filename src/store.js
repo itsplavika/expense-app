@@ -1,4 +1,11 @@
-import { createStore } from 'redux';
-import { AppReducer } from './reducers/app-reducers';
+import { createStore, combineReducers } from 'redux';
+import { langReducer } from "./reducers/lang-reducers.js";
+import { appReducer } from './reducers/app-reducers';
 
-export let store = createStore(AppReducer);
+
+const combinedReducers = combineReducers({
+    langReducer,
+    appReducer
+  });   
+
+export let store = createStore(combinedReducers);

@@ -28,7 +28,7 @@ const ChartComponent = (props) => {
     )
 }
 const mapStateToProps = (state) => ({
-    data: state
+    data: state.appReducer
 })
 
 
